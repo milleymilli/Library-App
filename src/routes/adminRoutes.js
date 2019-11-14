@@ -1,4 +1,4 @@
-/* eslint-disable eol-last */
+
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const debug = require('debug')('app:adminRoutes');
@@ -63,8 +63,8 @@ const books = [
 function router() {
   adminRouter.route('/')
     .get((req, res) => {
-      const url = ' mongodb://localhost:27017';// standard port that everything runs on
-      const dbName = 'libraryApp'; // dataBase name
+      const url = ' mongodb://localhost:27017';
+      const dbName = 'libraryApp';
 
       (async function mongo() {
         let client;
@@ -83,5 +83,4 @@ function router() {
     });
   return adminRouter;
 }
-
 module.exports = router;

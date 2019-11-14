@@ -4,9 +4,8 @@ const debug = require('debug')('app:bookController');
 
 function bookController(nav, bookService) {
   function getIndex(req, res) {
-    const url = ' mongodb://localhost:27017';// standard port that everything runs on
-    const dbName = 'libraryApp'; // dataBase name
-
+    const url = ' mongodb://localhost:27017';
+    const dbName = 'libraryApp';
     (async function mongo() {
       let client;
       try {
@@ -22,9 +21,7 @@ function bookController(nav, bookService) {
           'bookListView',
           {
             nav,
-            // nav: [
-            //   { link: '/books', title: 'Books' }, { link: '/authors', title: 'Author' },
-            // ],
+
             title: 'My App',
             books,
           },
@@ -38,8 +35,8 @@ function bookController(nav, bookService) {
   function getById(req, res) {
     const { id } = req.params;
     debug(req.body);
-    const url = ' mongodb://localhost:27017';// standard port that everything runs on
-    const dbName = 'libraryApp'; // dataBase name
+    const url = ' mongodb://localhost:27017';
+    const dbName = 'libraryApp';
 
     (async function mongo() {
       let client;

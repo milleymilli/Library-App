@@ -9,7 +9,7 @@
 body {
   padding-top: 0px;
   color: #646464;
-  background-color: #efefef;
+  background-color: #eabfcb !important;
 }
 
 h1,
@@ -25,13 +25,16 @@ footer {
   margin-top: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #cecece;
+  background-color: #f1b5b8;
 }
 
 #masthead {
   min-height: 199px;
-  background-color: #000044;
+  background-color: #f1b5b8;
   color: #aaaacc;
+}
+.navbar {
+  background-color: #eabfcb;
 }
 
 #masthead h1 {
@@ -40,12 +43,15 @@ footer {
   color: #fefeff;
   margin-top: 50px;
 }
-
+.well {
+  background-color: #eabfcb !important;
+}
 #masthead .well {
   margin-top: 31px;
-  background-color: #111166;
-  border-color: #000022;
-  color: #efefff;
+  background-color: #eabfcb;
+  border-color: #f1b5b8;
+  /* color: #0d0d0e;
+  padding: 50% auto; */
   min-height: 127px;
 }
 
@@ -65,7 +71,7 @@ footer {
 }
 
 .top-spacer {
-  background-color: #ffffff;
+  background-color: #eabfcb;
   height: 40px;
 }
 
@@ -86,7 +92,7 @@ a:hover {
 }
 
 .navbar-bright {
-  background-color: #111166;
+  background-color: #f1b5b8;
   color: #fff;
   margin-bottom: 0;
   border-width: 0;
@@ -104,7 +110,7 @@ a:hover {
 }
 
 .navbar-bright li > a:hover {
-  background-color: #000044;
+  background-color: #f1b5b8;
 }
 
 .dropdown-menu {
